@@ -46,6 +46,9 @@ html{
     transform: rotate(360deg);
   }
 }
+.aaaa{
+  width: 100% !important;
+}
 .play{
   background-color: #f8a6be!important;
  
@@ -60,7 +63,7 @@ html{
   color: black !important;
 }
 .rhap_controls-section{
-  margin: 0 30px;
+  padding: 0 30px;
 }
 
 .rhap_volume-bar>.rhap_volume-indicator,

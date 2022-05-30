@@ -24,7 +24,6 @@ function App() {
 
         <div className="grid grid-cols-3 bg-slate-700 lg:h-screen-navbar-player h-screen-navbar-player ">
           <DetailSong />
-
           <ListSong />
         </div>
         <PlaylistSong />

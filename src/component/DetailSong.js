@@ -4,7 +4,7 @@ import { songs } from "../Context";
 function DetailSong() {
   const { song } = useContext(songs);
   return (
-    <div className="lg:col-span-1  sm:col-start-1 col-end-7 h-32  top-0 z-50 bg-slate-700 relative ">
+    <div className="lg:col-span-1  sm:col-start-1 col-end-7 h-32  top-0 z-50 bg-slate-700 relative">
       <h2 className="text-cyan-500 font-bold  text-4xl mt-[10%] invisible lg:visible">
         Bài hát đang phát
       </h2>
