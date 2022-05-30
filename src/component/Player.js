@@ -17,7 +17,7 @@ function Player() {
   return (
     <div>
       <AudioPlayer
-        className="play"
+        className="play pl-0"
         src={song.url}
         showSkipControls={true}
         showJumpControls={true}

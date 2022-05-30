@@ -62,8 +62,8 @@ html{
 .rhap_time{
   color: black !important;
 }
-.rhap_controls-section{
-  padding: 0 30px;
+.rhap_additional-controls{
+  padding-left: 20px;
 }
 
 .rhap_volume-bar>.rhap_volume-indicator,
