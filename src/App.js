@@ -18,11 +18,11 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App bg-slate-700 !h-full">
       <songs.Provider value={{ DataSongs, song, handleSetSong }}>
         <Navbar />
 
-        <div className="grid grid-cols-3 bg-slate-700 lg:h-screen-navbar-player h-screen-navbar-player ">
+        <div className="grid grid-cols-3 bg-slate-700 lg:h-screen-navbar-player  fixed lg:top-[6rem] top-[3rem] w-full ">
           <DetailSong />
           <ListSong />
         </div>

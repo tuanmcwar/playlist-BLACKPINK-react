@@ -12,7 +12,7 @@ function ListSong() {
     setidSong(song.id);
   }, [song]);
   return (
-    <div className="lg:col-span-2 overflow-y-scroll sm:col-start-1 col-end-7 top-0 ">
+    <div className="lg:col-span-2 sm:col-start-1 col-end-7  overflow-y-scroll  h-screen w-full ">
       <table className="table-auto  relative m-auto border-separate w-full">
         <thead className="text-white h-12  ">
           <tr className="">

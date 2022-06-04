@@ -17,7 +17,7 @@ function Player() {
     handleSetSong(song.id + 1);
   };
   return (
-    <div>
+    <div className="left-0 bottom-0 fixed right-0 w-screen">
       <AudioPlayer
         onEnded={handleEndAction}
         className="play pl-0"
