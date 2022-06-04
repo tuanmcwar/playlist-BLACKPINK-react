@@ -1,14 +1,20 @@
-html{
+html {
   margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
 }
 .App {
   text-align: center;
- 
 }
 
-
+.text_truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -20,7 +26,6 @@ html{
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  
 }
 
 .App-header {
@@ -46,31 +51,30 @@ html{
     transform: rotate(360deg);
   }
 }
-.aaaa{
+.aaaa {
   width: 100% !important;
 }
-.play{
-  background-color: #f8a6be!important;
- 
+.play {
+  background-color: #f8a6be !important;
 }
-.rhap_download-progress{
+.rhap_download-progress {
   background-color: #f8a6bf80 !important;
-  }
+}
 .rhap_repeat-button,
 .rhap_main-controls-button,
 .rhap_volume-button,
-.rhap_time{
+.rhap_time {
   color: black !important;
 }
-.rhap_additional-controls{
+.rhap_additional-controls {
   padding-left: 20px;
 }
 
-.rhap_volume-bar>.rhap_volume-indicator,
+.rhap_volume-bar > .rhap_volume-indicator,
 .rhap_progress-indicator,
 .rhap_progress-filled,
-.rhap_volume-bar{
-  background-color: black!important;
+.rhap_volume-bar {
+  background-color: black !important;
 }
 /* .rhap_volume-indicator{
   background-color:black!important;

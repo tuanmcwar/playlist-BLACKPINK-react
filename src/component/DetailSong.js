@@ -11,7 +11,7 @@ function DetailSong() {
       <h2 className="text-neutral-400 text-2xl font-bold pt-4 mb-10 invisible lg:visible">
         {song.name}
       </h2>
-      <div className="w-[240px]  m-auto mt-1 invisible lg:visible">
+      <div className="w-[240px] h-[240px] overflow-hidden object-fill  m-auto mt-1 invisible lg:visible">
         <img className="w-full" src={song.links.images[0].url} alt="avatar" />
       </div>
       <div className="flex justify-center items-center mt-6">
@@ -25,7 +25,7 @@ function DetailSong() {
           src={song.links.images[1].url}
           alt="avatar"
         />
-        <h2 className="text-xl text-neutral-400 font-bold  absolute top-24 left-30 visible lg:invisible">
+        <h2 className="text-xl text_truncate text-neutral-400 font-bold  absolute top-24 left-30 visible lg:invisible">
           {song.name}
         </h2>
 

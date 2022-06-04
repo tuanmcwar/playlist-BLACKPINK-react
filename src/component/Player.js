@@ -13,10 +13,13 @@ function Player() {
   //   const handleAuto = () => {
   //     handleSetSong(song.id + 1);
   //   };
-
+  const handleEndAction = () => {
+    handleSetSong(song.id + 1);
+  };
   return (
     <div>
       <AudioPlayer
+        onEnded={handleEndAction}
         className="play pl-0"
         src={song.url}
         showSkipControls={true}
