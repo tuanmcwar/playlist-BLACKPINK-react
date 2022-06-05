@@ -34,26 +34,27 @@ function ListSong() {
             {DataSongs.map((song, index) => (
               <tr
                 key={index}
-                className={` h-12 text-gray-200 bg-slate-900 hover:bg-slate-600 hover:cursor-pointer ${
-                  idSong === song.id && "bg-slate-600 text-pink-300 "
+                className={`text-center text-gray-200 bg-slate-900 hover:bg-slate-600 hover:cursor-pointer w-[56px] h-[56px]  p-0 ${
+                  idSong === song.id &&
+                  "bg-slate-600 text-pink-300 border-0  p-0"
                 }`}
                 onClick={() => handlePlaySong(song.id)}
               >
                 <td
-                  className={` text-center sm:text-base text-xs  hover:bg-slate-600 hover:cursor-pointer  w-[52px] h-[52px] visible  ${
-                    idSong === song.name && "bg-slate-600 "
+                  className={`text-center  sm:text-base text-xs  hover:bg-slate-600 hover:cursor-pointer w-[50px] h-[50px]  visible  p-0 ${
+                    idSong === song.id && "bg-slate-600 text-center  p-0"
                   }`}
                   onClick={() => handlePlaySong(song.id)}
                 >
-                  <div className="spinner "></div>
+                  <div className="spinner  p-0"></div>
                 </td>
-                <td className="text-center sm:text-base text-xs lg:text-xl animationSong  ">
+                <td className="text-center sm:text-base text-xs lg:text-xl  animationSong p-0">
                   {song.name}
                 </td>
-                <td className="text-center sm:text-base text-xs lg:text-xl ">
+                <td className="text-center sm:text-base text-xs lg:text-xl  p-0">
                   {song.author}
                 </td>
-                <td className="text-center sm:text-base text-xs lg:text-xl">
+                <td className="text-center sm:text-base text-xs lg:text-xl p-0">
                   <a href={song.url}>
                     <i className="fa fa-download"></i>
                   </a>
@@ -81,27 +82,27 @@ function ListSong() {
             {DataSongs.map((song, index) => (
               <tr
                 key={index}
-                className={` h-12 text-gray-200 bg-slate-900 hover:bg-slate-600 hover:cursor-pointer   ${
+                className={`text-center text-gray-200 bg-slate-900 hover:bg-slate-600 hover:cursor-pointer w-[56px] h-[56px]  p-0 ${
                   idSong === song.id &&
-                  "bg-transparent text-pink-300 invisible "
+                  "bg-transparent text-center text-pink-300 invisible  p-0"
                 }`}
                 onClick={() => handlePlaySong(song.id)}
               >
                 <td
-                  className={` text-center sm:text-base text-xs hover:bg-slate-600 hover:cursor-pointer  w-[52px] h-[52px]    ${
-                    idSong === song.name && "bg-slate-600   "
+                  className={` text-center sm:text-base text-xs hover:bg-slate-600 hover:cursor-pointer  w-[52px] h-[52px]  p-0  ${
+                    idSong === song.id && "bg-slate-600  p-0  "
                   }`}
                   onClick={(ab) => handlePlaySong(song.id)}
                 >
                   {index + 1}
                 </td>
-                <td className="text-center sm:text-base text-xs lg:text-xl  ">
+                <td className="text-center sm:text-base text-xs lg:text-xl p-0  ">
                   {song.name}
                 </td>
-                <td className="text-center sm:text-base text-xs lg:text-xl ">
+                <td className="text-center sm:text-base text-xs lg:text-xl  p-0">
                   {song.author}
                 </td>
-                <td className="text-center sm:text-base text-xs lg:text-xl ">
+                <td className="text-center sm:text-base text-xs lg:text-xl  p-0">
                   <a href={song.url}>
                     <i className="fa fa-download"></i>
                   </a>
