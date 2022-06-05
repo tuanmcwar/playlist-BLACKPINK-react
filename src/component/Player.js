@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import { songs } from "../Context";
 
@@ -17,16 +17,17 @@ function Player() {
     handleSetSong(song.id + 1);
   };
   return (
-    <div className="left-0 bottom-0 fixed right-0 w-screen">
+    <div className="left-0 bottom-0 fixed right-0 w-screen  bgPlay">
       <AudioPlayer
-        onEnded={handleEndAction}
         className="play pl-0"
         src={song.url}
         showSkipControls={true}
         showJumpControls={true}
         onClickNext={handleNext}
         onClickPrevious={handlePrevious}
+        onEnded={handleEndAction}
       />
+
       {/* <AudioPlayer
         className="play"
         src={song.url}

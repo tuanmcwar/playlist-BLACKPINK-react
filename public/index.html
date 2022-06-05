@@ -25,7 +25,10 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>WEB NCC</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,5 +43,33 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      // disable right click
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+
+      document.onkeydown = function (e) {
+        // disable F12 key
+        if (e.keyCode == 123) {
+          return false;
+        }
+
+        // disable I key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+          return false;
+        }
+
+        // disable J key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+          return false;
+        }
+
+        // disable U key
+        if (e.ctrlKey && e.keyCode == 85) {
+          return false;
+        }
+      };
+    </script>
   </body>
 </html>
